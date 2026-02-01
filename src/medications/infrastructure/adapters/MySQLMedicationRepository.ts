@@ -32,7 +32,7 @@ export class MySQLMedicationRepository implements IMedicationRepository {
       dosage: row.dosage,
       frequency_hours: row.frequency_hours,
       start_time: row.start_time,
-      is_active: row.is_active,
+      is_active: Boolean(row.is_active),
       created_at: new Date(row.created_at),
     };
   }
@@ -53,7 +53,7 @@ export class MySQLMedicationRepository implements IMedicationRepository {
       dosage: row.dosage,
       frequency_hours: row.frequency_hours,
       start_time: row.start_time,
-      is_active: row.is_active,
+      is_active: Boolean(row.is_active),
       created_at: new Date(row.created_at),
     };
   }
@@ -70,7 +70,7 @@ export class MySQLMedicationRepository implements IMedicationRepository {
       dosage: row.dosage,
       frequency_hours: row.frequency_hours,
       start_time: row.start_time,
-      is_active: row.is_active,
+      is_active: Boolean(row.is_active),
       created_at: new Date(row.created_at),
     }));
   }
